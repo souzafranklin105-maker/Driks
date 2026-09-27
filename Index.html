@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Drinks de Goiás | Goiânia Drinks</title>
+    <!-- Tailwind CSS CDN para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-stone-950 text-stone-100 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-stone-900/90 backdrop-blur-md border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl">🍸</span>
+                <div>
+                    <span class="text-xl font-bold font-serif tracking-wider text-amber-500">GOIÂNIA DRINKS</span>
+                    <p class="text-xs text-stone-400">A coquetelaria tradicional e autoral do Estado de Goiás</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-stone-300">
+                <a href="#drinks" class="hover:text-amber-400 transition">Drinks Típicos</a>
+                <a href="#taças" class="hover:text-amber-400 transition">Guia de Taças</a>
+                <a href="#sobre" class="hover:text-amber-400 transition">Sobre a Cultura</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-32 bg-cover bg-center border-b border-stone-800" style="background-image: linear-gradient(to bottom, rgba(12, 10, 9, 0.8), rgba(12, 10, 9, 0.95)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1920&q=80');">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-4">Sabor do Cerrado</span>
+            <h1 class="text-4xl sm:text-6xl font-bold font-serif text-white tracking-tight mb-6">
+                A Arte da Coquetelaria em <span class="text-amber-500">Goiás</span>
+            </h1>
+            <p class="text-lg text-stone-300 mb-8 max-w-2xl mx-auto">
+                Explore os melhores drinks de Goiânia e do interior goiano. Receitas exclusivas valorizando ingredientes típicos como pequi, baru, guariroba, frutas do cerrado e cachaças artesanais da região.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#drinks" class="bg-amber-600 hover:bg-amber-500 text-stone-950 font-semibold px-8 py-3 rounded-xl shadow-lg transition duration-200">
+                    Ver Receitas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content: Drinks Catalog -->
+    <main id="drinks" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mb-4">Cardápio de Drinks Goianos</h2>
+            <p class="text-stone-400 max-w-xl mx-auto">Modo de preparo passo a passo, quantidade exata de bebidas, sugestão de taça ideal e foto ilustrativa para cada criação.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Drink 1 -->
+            <div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Cerrado Gin Tônica" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Taça Balloon</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold font-serif text-white">Gin Tônica do Cerrado</h3>
+                            <span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Autoral</span>
+                        </div>
+                        <p class="text-stone-400 text-sm mb-4">Um drink refrescante que harmoniza o clássico gin com notas cítricas de capim-santo e infusão leve de baru.</p>
+                        
+                        <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
+                            <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
+                            <ul class="text-xs text-stone-300 space-y-1">
+                                <li>• <strong>Gin</strong>: 50 ml</li>
+                                <li>• <strong>Água Tônica</strong>: 150 ml</li>
+                                <li>• <strong>Xarope de Capim-santo</strong>: 20 ml</li>
+                                <li>• <strong>Castanha de Baru triturada</strong>: 5g (para guarnição)</li>
+                                <li>• <strong>Gelo</strong>: Cubos grandes até encher</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-stone-800 pt-4">
+                        <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            1. Preencha a taça Balloon com bastante gelo e mexa levemente para gelar o vidro.<br>
+                            2. Adicione o Gin e o xarope de capim-santo.<br>
+                            3. Complete suavemente com a água tônica gelada para preservar o gás.<br>
+                            4. Finalize salpicando castanha de baru triturada na borda para perfumar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drink 2 -->
+            <div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80" alt="Caipirinha Goiana de Caju com Jerivá" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Copo Baixo (Old Fashioned)</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold font-serif text-white">Caipira Goiana de Caju</h3>
+                            <span class="text-xs uppercase bg-amber-950 text-amber-400 border border-amber-800 px-2 py-0.5 rounded">Tradicional</span>
+                        </div>
+                        <p class="text-stone-400 text-sm mb-4">A clássica caipirinha ganha uma identidade profunda com cachaça artesanal de alambique goiano e caju fresco.</p>
+                        
+                        <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
+                            <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
+                            <ul class="text-xs text-stone-300 space-y-1">
+                                <li>• <strong>Cachaça Artesanal Goiana</strong>: 60 ml</li>
+                                <li>• <strong>Caju fresco cortado em cubos</strong>: 1 unidade média</li>
+                                <li>• <strong>Açúcar Cristal</strong>: 2 colheres de chá</li>
+                                <li>• <strong>Gelo moído ou cubos</strong>: A gosto</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-stone-800 pt-4">
+                        <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            1. Coloque os pedaços de caju e o açúcar no copo baixo (Old Fashioned).<br>
+                            2. Macere suavemente para liberar o suco sem amargar a castanha do caju.<br>
+                            3. Adicione a cachaça artesanal e complete com gelo.<br>
+                            4. Misture bem com uma colher bailarina de baixo para cima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drink 3 -->
+            <div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80" alt="Batida de Mangaba" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Taça Cônica / Milkshake</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold font-serif text-white">Batida Cremosa de Mangaba</h3>
+                            <span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Regional</span>
+                        </div>
+                        <p class="text-stone-400 text-sm mb-4">Fruta emblemática do cerrado goiano combinada com leite condensado e cachaça leve.</p>
+                        
+                        <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
+                            <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
+                            <ul class="text-xs text-stone-300 space-y-1">
+                                <li>• <strong>Polpa de Mangaba</strong>: 80 ml</li>
+                                <li>• <strong>Cachaça Branca</strong>: 50 ml</li>
+                                <li>• <strong>Leite Condensado</strong>: 30 ml</li>
+                                <li>• <strong>Gelo picado</strong>: 1 xícara</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-stone-800 pt-4">
+                        <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            1. Coloque todos os ingredientes no liquidificador.<br>
+                            2. Bata em velocidade média por 30 segundos até obter uma textura cremosa e homogênea.<br>
+                            3. Despeje em uma taça elegante e sirva imediatamente com canudo de papel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drink 4 -->
+            <div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1510626176911-41d1cc6e71ea?auto=format&fit=crop&w=800&q=80" alt="Guariroba Sour" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Taça Coupe</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold font-serif text-white">Goiânia Sour</h3>
+                            <span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Sofisticado</span>
+                        </div>
+                        <p class="text-stone-400 text-sm mb-4">Releitura moderna do clássico Whiskey Sour com xarope artesanal de guariroba e limão taiti.</p>
+                        
+                        <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
+                            <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
+                            <ul class="text-xs text-stone-300 space-y-1">
+                                <li>• <strong>Bourbon ou Whisky</strong>: 60 ml</li>
+                                <li>• <strong>Suco de Limão Taiti</strong>: 25 ml</li>
+                                <li>• <strong>Xarope de Guariroba</strong>: 20 ml</li>
+                                <li>• <strong>Clara de ovo</strong>: 1 unidade (opcional para espuma)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-stone-800 pt-4">
+                        <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            1. Faça um 'dry shake' (agite sem gelo) com todos os ingredientes para emulsionar a clara.<br>
+                            2. Adicione gelo à coqueteleira e agite vigorosamente por 15 segundos.<br>
+                            3. Faça o duplo coado (double strain) para uma taça Coupe previamente gelada.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drink 5 -->
+            <div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=800&q=80" alt="Pe de Cabra Goiano" class="h-full w-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Copo Long Drink</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold font-serif text-white">Pé de Cabra Goiano</h3>
+                            <span class="text-xs uppercase bg-amber-950 text-amber-400 border border-amber-800 px-2 py-0.5 rounded">Festa / Boteco</span>
+                        </div>
+                        <p class="text-stone-400 text-sm mb-4">Mistura tradicional de boteco que une vinho tinto suave, leite condensado e cachaça.</p>
+                        
+                        <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
+                            <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
+                            <ul class="text-xs text-stone-300 space-y-1">
+                                <li>• <strong>Vinho Tinto Suave</strong>: 100 ml</li>
+                                <li>• <strong>Cachaça</strong>: 40 ml</li>
+                                <li>• <strong>Leite Condensado</strong>: 30 ml</li>
+                                <li>• <strong>Gelo</strong>: 4 cubos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-stone-800 pt-4">
+                        <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            1. Em uma coqueteleira com gelo, adicione o leite condensado, a cachaça e o vinho tinto.<br>
+                            2. Agite fortemente por 20 segundos para incorporar bem os ingredientes densos.<br>
+                            3. Sirva em copo Long Drink com guarnição de casca de limão.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drink 6 -->
+            <div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80" alt="Sunset Cerrado" class="h-full w-full object-cover hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Taça Hurricane</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-2xl font-bold font-serif text-white">Sunset Cerrado (Araticum)</h3>
+                            <span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Especial</span>
+                        </div>
+                        <p class="text-stone-400 text-sm mb-4">Inspirado nos pores do sol marcantes do planalto central, combinando rum com polpa de araticum e laranja.</p>
+                        
+                        <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
+                            <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
+                            <ul class="text-xs text-stone-300 space-y-1">
+                                <li>• <strong>Rum Ouro</strong>: 50 ml</li>
+                                <li>• <strong>Polpa de Araticum</strong>: 40 ml</li>
+                                <li>• <strong>Suco de Laranja</strong>: 60 ml</li>
+                                <li>• <strong>Grenadine (Xarope de Romã)</strong>: 15 ml</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-stone-800 pt-4">
+                        <h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
+                        <p class="text-xs text-stone-300 leading-relaxed">
+                            1. Adicione o grenadine no fundo de uma taça Hurricane.<br>
+                            2. Encha a taça com gelo picado cuidadosamente.<br>
+                            3. Bata o rum, a polpa de araticum e o suco de laranja na coqueteleira e despeje lentamente sobre o gelo para criar efeito degradê.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Guia de Taças Section -->
+    <section id="taças" class="bg-stone-900 border-t border-b border-stone-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-serif text-white mb-3">Guia de Estilos de Taças e Copos</h2>
+                <p class="text-stone-400">Entenda a importância de escolher o recipiente correto para cada perfil de drink goiano.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800 text-center">
+                    <div class="text-4xl mb-3">🍷</div>
+                    <h3 class="text-lg font-bold text-white mb-2 font-serif">Taça Balloon</h3>
+                    <p class="text-xs text-stone-400">Ideal para Gin Tônicas e drinks aromáticos. O bojo largo permite a concentração de aromas botânicos e especiarias do cerrado.</p>
+                </div>
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800 text-center">
+                    <div class="text-4xl mb-3">🥃</div>
+                    <h3 class="text-lg font-bold text-white mb-2 font-serif">Copo Baixo (Old Fashioned)</h3>
+                    <p class="text-xs text-stone-400">Perfeito para caipirinhas e drinks com grande quantidade de gelo e fruta macerada. Base larga facilita o manuseio com o socador.</p>
+                </div>
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800 text-center">
+                    <div class="text-4xl mb-3">🍸</div>
+                    <h3 class="text-lg font-bold text-white mb-2 font-serif">Taça Coupe / Martini</h3>
+                    <p class="text-xs text-stone-400">Indicada para drinks batidos sem gelo (como sours). Mantém a temperatura fria sem que o calor das mãos altere o líquido.</p>
+                </div>
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800 text-center">
+                    <div class="text-4xl mb-3">🍹</div>
+                    <h3 class="text-lg font-bold text-white mb-2 font-serif">Taça Hurricane / Long</h3>
+                    <p class="text-xs text-stone-400">Ótima para coquetéis longos, tropicais e batidas com frutas. Comporta bastante gelo e decorações volumosas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="sobre" class="bg-stone-950 py-12 border-t border-stone-900 text-center text-xs text-stone-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p class="text-stone-400 font-serif text-sm">Goiânia Drinks & Coquetelaria Regional</p>
+            <p>Desenvolvido sob medida para implantação em sistemas Ruby / Gate Ruby. Conteúdo voltado para fins gastronômicos e culturais.</p>
+            <p class="text-stone-600">&copy; 2026 — Beba com moderação. Venda proibida para menores de 18 anos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
