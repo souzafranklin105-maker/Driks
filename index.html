@@ -1,407 +1,392 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guia de Drinks de Goiás | Goiânia Drinks</title>
-<!-- Tailwind CSS CDN para estilização rápida e moderna -->
+<title>Guia Definitivo de Vinhos & Drinks | Goiânia Drinks</title>
+<!-- Tailwind CSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,750;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-body { font-family: 'Inter', sans-serif; }
-h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+  body { font-family: 'Inter', sans-serif; }
+  h1, h2, h3, h4, .font-serif { font-family: 'Playfair Display', serif; }
+  .glass-panel { background: rgba(24, 24, 27, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(63, 63, 70, 0.4); }
 </style>
 </head>
-<body class="bg-stone-950 text-stone-100 antialiased">
+<body class="bg-[#09090b] text-stone-100 antialiased selection:bg-amber-500 selection:text-stone-950">
+
 <!-- Header / Navbar -->
-<header class="sticky top-0 z-50 bg-stone-900/90 backdrop-blur-md border-b border-stone-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-<div class="flex items-center space-x-3">
-<span class="text-3xl">🍸</span>
-<div>
-<span class="text-xl font-bold font-serif tracking-wider text-amber-500">GOIÂNIA DRINKS</span>
-<p class="text-xs text-stone-400">A coquetelaria tradicional e autoral do Estado de Goiás</p>
-</div>
-</div>
-<nav class="hidden md:flex space-x-6 text-sm font-medium text-stone-300">
-<a href="#drinks" class="hover:text-amber-400 transition">Drinks Típicos</a>
-<a href="#vinhos" class="hover:text-amber-400 transition">Carta de Vinhos</a>
-<a href="#taças" class="hover:text-amber-400 transition">Guia de Taças</a>
-<a href="#fundador" class="hover:text-amber-400 transition">O Fundador</a>
-</nav>
-</div>
+<header class="sticky top-0 z-50 bg-[#09090b]/90 backdrop-blur-md border-b border-stone-800/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <div class="flex items-center space-x-3">
+      <span class="text-3xl p-2 bg-amber-500/10 rounded-xl border border-amber-500/20">🍷</span>
+      <div>
+        <span class="text-xl font-bold font-serif tracking-wider text-amber-400">GOIÂNIA DRINKS</span>
+        <p class="text-xs text-stone-400">Coquetelaria Autoral & Adega Goiana</p>
+      </div>
+    </div>
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-stone-300">
+      <a href="#vinhos-secos" class="hover:text-amber-400 transition">Vinhos Secos</a>
+      <a href="#vinhos-suaves" class="hover:text-amber-400 transition">Vinhos Suaves</a>
+      <a href="#drinks" class="hover:text-amber-400 transition">Drinks Regionais</a>
+      <a href="#tacas" class="hover:text-amber-400 transition">Guia de Taças</a>
+      <a href="#eventos" class="text-amber-400 hover:text-amber-300 transition font-semibold">Eventos & WhatsApp</a>
+    </nav>
+    <div>
+      <a href="https://wa.me/5562999995308?text=Olá%20Franklin,%20gostaria%20de%20orçar%20um%20evento%20e%20saber%20mais%20sobre%20os%20seus%20serviços!" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-xs uppercase tracking-wider px-4 py-2.5 rounded-xl shadow-lg transition duration-200">
+        <span>💬 WhatsApp</span>
+      </a>
+    </div>
+  </div>
 </header>
 
 <!-- Hero Section -->
-<section class="relative py-20 lg:py-32 bg-cover bg-center border-b border-stone-800" style="background-image: linear-gradient(to bottom, rgba(12, 10, 9, 0.8), rgba(12, 10, 9, 0.95)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1920&q=80');">
-<div class="max-w-4xl mx-auto px-4 text-center">
-<span class="inline-block py-1 px-3 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-4">Sabor do Cerrado & Vinhos Selecionados</span>
-<h1 class="text-4xl sm:text-6xl font-bold font-serif text-white tracking-tight mb-6">
-A Arte da Coquetelaria em <span class="text-amber-500">Goiás</span>
-</h1>
-<p class="text-lg text-stone-300 mb-8 max-w-2xl mx-auto">
-Explore o maior acervo expandido de drinks de Goiânia, receitas com ingredientes do cerrado e uma seleção exclusiva de vinhos finos e artesanais.
-</p>
-<div class="flex justify-center gap-4">
-<a href="#drinks" class="bg-amber-600 hover:bg-amber-500 text-stone-950 font-semibold px-8 py-3 rounded-xl shadow-lg transition duration-200">
-Ver Receitas
-</a>
-<a href="#vinhos" class="bg-stone-800 hover:bg-stone-700 text-stone-100 font-semibold px-8 py-3 rounded-xl border border-stone-700 transition duration-200">
-Explorar Vinhos
-</a>
-</div>
-</div>
+<section class="relative py-24 lg:py-36 bg-cover bg-center border-b border-stone-800" style="background-image: linear-gradient(to bottom, rgba(9, 9, 11, 0.75), rgba(9, 9, 11, 0.95)), url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1920&q=80');">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <span class="inline-block py-1 px-3 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-4">A excelência dos vinhedos goianos e da mixologia</span>
+    <h1 class="text-4xl sm:text-6xl font-bold font-serif text-white tracking-tight mb-6">
+      A Maior Carta de Vinhos e <span class="text-amber-500">Drinks de Goiás</span>
+    </h1>
+    <p class="text-lg text-stone-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+      Explore do mais acessível ao mais refinado rótulo de vinho seco e suave de produtores do estado, além de receitas exclusivas do cerrado estruturadas por Franklin Ribeiro de Souza.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#vinhos-secos" class="bg-amber-600 hover:bg-amber-500 text-stone-950 font-semibold px-8 py-3.5 rounded-xl shadow-lg transition duration-200">
+        Ver Vinhos Secos
+      </a>
+      <a href="#eventos" class="bg-stone-900 hover:bg-stone-800 text-stone-100 font-semibold px-8 py-3.5 rounded-xl border border-stone-700 transition duration-200">
+        Contratar para Eventos
+      </a>
+    </div>
+  </div>
 </section>
 
-<!-- Main Content: Drinks Catalog -->
-<main id="drinks" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-<div class="text-center mb-16">
-<h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mb-4">Cardápio Expandido de Drinks Goianos</h2>
-<p class="text-stone-400 max-w-xl mx-auto">Modo de preparo passo a passo, quantidades exatas, sugestões de taças e ingredientes autênticos do planalto central.</p>
-</div>
+<!-- MAIN CONTENT: VINHOS SECOS (NO TOPO) -->
+<section id="vinhos-secos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+  <div class="text-center mb-16">
+    <span class="inline-block py-1 px-3 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-semibold uppercase tracking-widest mb-3">Destaque Principal</span>
+    <h2 class="text-3xl sm:text-5xl font-bold font-serif text-white mb-4">Carta de Vinhos Secos do Estado de Goiás</h2>
+    <p class="text-stone-400 max-w-2xl mx-auto">Organizados ordenadamente do rótulo de entrada até as safras mais exclusivas de altitude de Pirenópolis e região. Sem preços, com foco total na uva, taça e origem.</p>
+  </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<!-- Drink 1 -->
-<div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
-<div class="h-56 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Cerrado Gin Tônica" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Taça Balloon</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-2xl font-bold font-serif text-white">Gin Tônica do Cerrado</h3>
-<span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Autoral</span>
-</div>
-<p class="text-stone-400 text-sm mb-4">Um drink refrescante que harmoniza o clássico gin com notas cítricas de capim-santo e infusão leve de baru.</p>
-<div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
-<ul class="text-xs text-stone-300 space-y-1">
-<li>• <strong>Gin</strong>: 50 ml</li>
-<li>• <strong>Água Tônica</strong>: 150 ml</li>
-<li>• <strong>Xarope de Capim-santo</strong>: 20 ml</li>
-<li>• <strong>Castanha de Baru triturada</strong>: 5g</li>
-<li>• <strong>Gelo</strong>: Cubos grandes</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-stone-800 pt-4">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
-<p class="text-xs text-stone-300 leading-relaxed">1. Preencha a taça Balloon com gelo.<br>2. Adicione o Gin e o xarope.<br>3. Complete com tônica e finalize com baru.</p>
-</div>
-</div>
-</div>
+    <!-- Vinho Seco 1: Entrada / Mais Acessível -->
+    <div class="glass-panel rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col">
+      <div class="p-6 bg-stone-900/50 border-b border-stone-800 flex justify-between items-center">
+        <span class="text-xs uppercase font-semibold bg-stone-800 text-stone-300 px-3 py-1 rounded-full">Linha Clássica</span>
+        <span class="text-xs font-bold text-rose-400 uppercase">Tinto Seco Fino</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+        <div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-1">Cores do Planalto Syrah</h3>
+          <p class="text-xs text-amber-400/90 font-medium mb-4">📍 Origem: Região Metropolitana de Goiânia & Entorno - GO</p>
+          
+          <div class="bg-stone-950 p-4 rounded-xl border border-stone-800/80 space-y-2 text-xs text-stone-300">
+            <div class="flex justify-between"><span>Uva:</span> <strong class="text-stone-100">Syrah Jovem</strong></div>
+            <div class="flex justify-between"><span>Teor Alcoólico:</span> <strong class="text-stone-100">12.5%</strong></div>
+            <div class="flex justify-between"><span>Sugestão de Taça:</span> <strong class="text-amber-400">Taça Bordeaux (Bojo Largo)</strong></div>
+          </div>
+        </div>
+        <p class="text-xs text-stone-400 leading-relaxed">Rótulo leve, frutado e acessível, ideal para o dia a dia e petiscos simples de boteco goiano.</p>
+      </div>
+    </div>
 
-<!-- Drink 2 -->
-<div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
-<div class="h-56 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80" alt="Caipira Goiana de Caju" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Copo Baixo</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-2xl font-bold font-serif text-white">Caipira Goiana de Caju</h3>
-<span class="text-xs uppercase bg-amber-950 text-amber-400 border border-amber-800 px-2 py-0.5 rounded">Tradicional</span>
-</div>
-<p class="text-stone-400 text-sm mb-4">A clássica caipirinha com cachaça artesanal de alambique goiano e caju fresco.</p>
-<div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
-<ul class="text-xs text-stone-300 space-y-1">
-<li>• <strong>Cachaça Artesanal</strong>: 60 ml</li>
-<li>• <strong>Caju Fresco</strong>: 1 unidade</li>
-<li>• <strong>Açúcar Cristal</strong>: 2 colheres</li>
-<li>• <strong>Gelo</strong>: A gosto</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-stone-800 pt-4">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
-<p class="text-xs text-stone-300 leading-relaxed">1. Macere o caju com o açúcar.<br>2. Adicione a cachaça e o gelo.<br>3. Misture bem de baixo para cima.</p>
-</div>
-</div>
-</div>
+    <!-- Vinho Seco 2 -->
+    <div class="glass-panel rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col">
+      <div class="p-6 bg-stone-900/50 border-b border-stone-800 flex justify-between items-center">
+        <span class="text-xs uppercase font-semibold bg-stone-800 text-stone-300 px-3 py-1 rounded-full">Linha Intermediária</span>
+        <span class="text-xs font-bold text-amber-400 uppercase">Branco Seco</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+        <div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-1">Alvorada do Cerrado Chardonnay</h3>
+          <p class="text-xs text-amber-400/90 font-medium mb-4">📍 Origem: Vale do Araguaia & Pirenópolis - GO</p>
+          
+          <div class="bg-stone-950 p-4 rounded-xl border border-stone-800/80 space-y-2 text-xs text-stone-300">
+            <div class="flex justify-between"><span>Uva:</span> <strong class="text-stone-100">Chardonnay</strong></div>
+            <div class="flex justify-between"><span>Teor Alcoólico:</span> <strong class="text-stone-100">12.0%</strong></div>
+            <div class="flex justify-between"><span>Sugestão de Taça:</span> <strong class="text-amber-400">Taça Chardonnay / White Wine</strong></div>
+          </div>
+        </div>
+        <p class="text-xs text-stone-400 leading-relaxed">Notas cítricas marcantes com acidez equilibrada. Harmoniza perfeitamente com peixes de água doce.</p>
+      </div>
+    </div>
 
-<!-- Drink 3 -->
-<div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
-<div class="h-56 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80" alt="Batida de Mangaba" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Taça Cônica</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-2xl font-bold font-serif text-white">Batida Cremosa de Mangaba</h3>
-<span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Regional</span>
-</div>
-<p class="text-stone-400 text-sm mb-4">Fruta emblemática do cerrado combinada com leite condensado e cachaça leve.</p>
-<div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
-<ul class="text-xs text-stone-300 space-y-1">
-<li>• <strong>Polpa de Mangaba</strong>: 80 ml</li>
-<li>• <strong>Cachaça Branca</strong>: 50 ml</li>
-<li>• <strong>Leite Condensado</strong>: 30 ml</li>
-<li>• <strong>Gelo picado</strong>: 1 xícara</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-stone-800 pt-4">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
-<p class="text-xs text-stone-300 leading-relaxed">1. Bata tudo no liquidificador por 30s.<br>2. Sirva em taça elegante.</p>
-</div>
-</div>
-</div>
+    <!-- Vinho Seco 3 -->
+    <div class="glass-panel rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col">
+      <div class="p-6 bg-stone-900/50 border-b border-stone-800 flex justify-between items-center">
+        <span class="text-xs uppercase font-semibold bg-stone-800 text-stone-300 px-3 py-1 rounded-full">Linha Especial</span>
+        <span class="text-xs font-bold text-pink-400 uppercase">Rosé Seco Fino</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+        <div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-1">Sunset Pireneus Rosé</h3>
+          <p class="text-xs text-amber-400/90 font-medium mb-4">📍 Origem: Serra dos Pireneus (Pirenópolis - GO)</p>
+          
+          <div class="bg-stone-950 p-4 rounded-xl border border-stone-800/80 space-y-2 text-xs text-stone-300">
+            <div class="flex justify-between"><span>Uva:</span> <strong class="text-stone-100">Tempranillo & Grenache</strong></div>
+            <div class="flex justify-between"><span>Teor Alcoólico:</span> <strong class="text-stone-100">12.5%</strong></div>
+            <div class="flex justify-between"><span>Sugestão de Taça:</span> <strong class="text-amber-400">Taça Balloon / Tulipa Rosé</strong></div>
+          </div>
+        </div>
+        <p class="text-xs text-stone-400 leading-relaxed">Delicado, refrescante e aromático. Excelente escolha para tardes quentes em Goiânia.</p>
+      </div>
+    </div>
 
-<!-- Drink 4 -->
-<div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
-<div class="h-56 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1510626176911-41d1cc6e71ea?auto=format&fit=crop&w=800&q=80" alt="Goiânia Sour" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Taça Coupe</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-2xl font-bold font-serif text-white">Goiânia Sour</h3>
-<span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Sofisticado</span>
-</div>
-<p class="text-stone-400 text-sm mb-4">Releitura moderna com xarope artesanal de guariroba e limão taiti.</p>
-<div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
-<ul class="text-xs text-stone-300 space-y-1">
-<li>• <strong>Bourbon</strong>: 60 ml</li>
-<li>• <strong>Suco de Limão Taiti</strong>: 25 ml</li>
-<li>• <strong>Xarope de Guariroba</strong>: 20 ml</li>
-<li>• <strong>Clara de ovo</strong>: 1 unidade</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-stone-800 pt-4">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
-<p class="text-xs text-stone-300 leading-relaxed">1. Dry shake sem gelo.<br>2. Shake com gelo e duplo coado.</p>
-</div>
-</div>
-</div>
+    <!-- Vinho Seco 4 -->
+    <div class="glass-panel rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col">
+      <div class="p-6 bg-stone-900/50 border-b border-stone-800 flex justify-between items-center">
+        <span class="text-xs uppercase font-semibold bg-stone-800 text-stone-300 px-3 py-1 rounded-full">Linha Premium</span>
+        <span class="text-xs font-bold text-rose-400 uppercase">Tinto Seco Reserva</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+        <div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-1">Terraços do Cerrado Grand Syrah</h3>
+          <p class="text-xs text-amber-400/90 font-medium mb-4">📍 Origem: Vinhedos de Altitude de Pirenópolis - GO</p>
+          
+          <div class="bg-stone-950 p-4 rounded-xl border border-stone-800/80 space-y-2 text-xs text-stone-300">
+            <div class="flex justify-between"><span>Uva:</span> <strong class="text-stone-100">Syrah de Altitude</strong></div>
+            <div class="flex justify-between"><span>Teor Alcoólico:</span> <strong class="text-stone-100">13.5%</strong></div>
+            <div class="flex justify-between"><span>Sugestão de Taça:</span> <strong class="text-amber-400">Taça Burgundy / Tinto Encorpado</strong></div>
+          </div>
+        </div>
+        <p class="text-xs text-stone-400 leading-relaxed">Passagem por barrica de carvalho. Notas de especiarias do cerrado e frutas negras maduras.</p>
+      </div>
+    </div>
 
-<!-- Drink 5: NOVO -->
-<div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
-<div class="h-56 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=80" alt="Quentão do Cerrado" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Caneca de Barro</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-2xl font-bold font-serif text-white">Quentão do Cerrado com Mel</h3>
-<span class="text-xs uppercase bg-amber-950 text-amber-400 border border-amber-800 px-2 py-0.5 rounded">Inverno Goiano</span>
-</div>
-<p class="text-stone-400 text-sm mb-4">Cachaça envelhecida, mel silvestre de florada do cerrado, gengibre e especiarias quentes.</p>
-<div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
-<ul class="text-xs text-stone-300 space-y-1">
-<li>• <strong>Cachaça Envelhecida</strong>: 80 ml</li>
-<li>• <strong>Mel Silvestre</strong>: 30 ml</li>
-<li>• <strong>Gengibre em rodelas</strong>: 15g</li>
-<li>• <strong>Cravo e Canela</strong>: A gosto</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-stone-800 pt-4">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
-<p class="text-xs text-stone-300 leading-relaxed">1. Aqueça levemente o mel, gengibre e especiarias.<br>2. Adicione a cachaça e sirva quente.</p>
-</div>
-</div>
-</div>
+    <!-- Vinho Seco 5: O Mais Caro / Sofisticado -->
+    <div class="glass-panel rounded-2xl overflow-hidden border-amber-500/40 hover:border-amber-500 transition duration-300 flex flex-col relative shadow-xl shadow-amber-950/20">
+      <div class="absolute top-0 right-0 bg-amber-500 text-stone-950 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-bl-xl">Mais Exclusivo</div>
+      <div class="p-6 bg-stone-900/50 border-b border-stone-800 flex justify-between items-center">
+        <span class="text-xs uppercase font-semibold bg-amber-950 text-amber-400 px-3 py-1 rounded-full border border-amber-800">Edição Limitada</span>
+        <span class="text-xs font-bold text-amber-400 uppercase">Tinto Seco de Coleção</span>
+      </div>
+      <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+        <div>
+          <h3 class="text-2xl font-bold font-serif text-white mb-1">Ícone do Planalto Cuvée Especial</h3>
+          <p class="text-xs text-amber-400/90 font-medium mb-4">📍 Origem: Terroir Protegido da Serra dos Pireneus - GO</p>
+          
+          <div class="bg-stone-950 p-4 rounded-xl border border-stone-800/80 space-y-2 text-xs text-stone-300">
+            <div class="flex justify-between"><span>Uva:</span> <strong class="text-stone-100">Tempranillo, Syrah & Barbera</strong></div>
+            <div class="flex justify-between"><span>Teor Alcoólico:</span> <strong class="text-stone-100">14.0%</strong></div>
+            <div class="flex justify-between"><span>Sugestão de Taça:</span> <strong class="text-amber-400">Taça Cristal Riedel / Grand Cru</strong></div>
+          </div>
+        </div>
+        <p class="text-xs text-stone-400 leading-relaxed">O topo da vitivinicultura goiana. Complexo, estructurado, com taninos macios e final prolongado para grandes ocasiões.</p>
+      </div>
+    </div>
 
-<!-- Drink 6: NOVO -->
-<div class="bg-stone-900 rounded-2xl overflow-hidden border border-stone-800 hover:border-amber-500/50 transition duration-300 flex flex-col">
-<div class="h-56 overflow-hidden relative">
-<img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=800&q=80" alt="Pequi Mule" class="w-full h-full object-cover hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-stone-900/80 backdrop-blur-md text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-stone-700">Caneca de Cobre</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<div class="flex justify-between items-start mb-2">
-<h3 class="text-2xl font-bold font-serif text-white">Pequi Mule Autoral</h3>
-<span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Exclusivo</span>
-</div>
-<p class="text-stone-400 text-sm mb-4">A nossa versão do famoso Moscow Mule com leve toque de essência de pequi e espuma de gengibre.</p>
-<div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">Ingredientes & Quantidades:</h4>
-<ul class="text-xs text-stone-300 space-y-1">
-<li>• <strong>Vodka Premium</strong>: 50 ml</li>
-<li>• <strong>Licor/Extrato suave de Pequi</strong>: 10 ml</li>
-<li>• <strong>Xarope de Limão</strong>: 20 ml</li>
-<li>• <strong>Espuma de Gengibre</strong>: Cobertura</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-stone-800 pt-4">
-<h4 class="text-xs font-semibold text-amber-400 uppercase tracking-wider mb-1">Modo de Preparo:</h4>
-<p class="text-xs text-stone-300 leading-relaxed">1. Misture vodka, pequi e limão com gelo.<br>2. Cubra com a espuma de gengibre cremosa.</p>
-</div>
-</div>
-</div>
-
-</div>
-</main>
-
-<!-- Seção Expandida de Vinhos -->
-<section id="vinhos" class="bg-stone-900 border-t border-stone-800 py-16">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12">
-<span class="inline-block py-1 px-3 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-semibold uppercase tracking-widest mb-3">Seleção Exclusiva de Adega</span>
-<h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mb-3">Carta de Vinhos Finos, Tintos, Brancos & Rosés</h2>
-<p class="text-stone-400 max-w-2xl mx-auto">Conheça as garrafas ilustrativas de alta qualidade, uvas selecionadas e origens recomendadas para harmonizar com a alta gastronomia goiana.</p>
-</div>
-
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-<!-- Vinho 1 -->
-<div class="bg-stone-950 rounded-2xl overflow-hidden border border-stone-800 hover:border-rose-500/50 transition duration-300 flex flex-col">
-<div class="h-64 overflow-hidden relative bg-stone-900 flex items-center justify-center p-4">
-<img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Vinho Tinto Reserva" class="h-full object-contain hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-rose-950 text-rose-400 text-xs font-bold px-3 py-1 rounded-full border border-rose-800">Tinto Seco</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<h3 class="text-xl font-bold font-serif text-white mb-1">Terraços do Cerrado Reserva</h3>
-<p class="text-xs text-rose-400 font-semibold mb-3">Origem: Serra dos Pireneus (Pirenópolis - GO)</p>
-<div class="space-y-2 text-xs text-stone-300 mb-4 bg-stone-900 p-3 rounded-xl border border-stone-800">
-<p>• <strong>Uva Principal:</strong> Syrah & Tempranillo</p>
-<p>• <strong>Safra:</strong> 2023</p>
-<p>• <strong>Teor Alcoólico:</strong> 13.5%</p>
-<p>• <strong>Qualidade:</strong> Premiação Nacional de Vinhos de Altitude</p>
-</div>
-<p class="text-stone-400 text-xs leading-relaxed">Notas marcantes de frutas negras maduras, especiarias e leve toque amadeirado. Perfeito para carnes vermelhas e queijos curados.</p>
-</div>
-</div>
-</div>
-
-<!-- Vinho 2 -->
-<div class="bg-stone-950 rounded-2xl overflow-hidden border border-stone-800 hover:border-rose-500/50 transition duration-300 flex flex-col">
-<div class="h-64 overflow-hidden relative bg-stone-900 flex items-center justify-center p-4">
-<img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=600&q=80" alt="Vinho Branco Chardonnay" class="h-full object-contain hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-amber-950 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-800">Branco Fino</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<h3 class="text-xl font-bold font-serif text-white mb-1">Alvorada Chardonnay</h3>
-<p class="text-xs text-amber-400 font-semibold mb-3">Origem: Vale dos Vinhedos / Seleção Especial</p>
-<div class="space-y-2 text-xs text-stone-300 mb-4 bg-stone-900 p-3 rounded-xl border border-stone-800">
-<p>• <strong>Uva Principal:</strong> Chardonnay</p>
-<p>• <strong>Safra:</strong> 2024</p>
-<p>• <strong>Teor Alcoólico:</strong> 12.0%</p>
-<p>• <strong>Qualidade:</strong> Extra Seco e Refrescante</p>
-</div>
-<p class="text-stone-400 text-xs leading-relaxed">Aromas cítricos de abacaxi e toque de baunilha. Excelente acompanhamento para peixes de água doce e entradas leves.</p>
-</div>
-</div>
-</div>
-
-<!-- Vinho 3 -->
-<div class="bg-stone-950 rounded-2xl overflow-hidden border border-stone-800 hover:border-rose-500/50 transition duration-300 flex flex-col">
-<div class="h-64 overflow-hidden relative bg-stone-900 flex items-center justify-center p-4">
-<img src="https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=600&q=80" alt="Vinho Rosé" class="h-full object-contain hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-pink-950 text-pink-400 text-xs font-bold px-3 py-1 rounded-full border border-pink-800">Rosé Suave</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<h3 class="text-xl font-bold font-serif text-white mb-1">Sunset Planalto Rosé</h3>
-<p class="text-xs text-pink-400 font-semibold mb-3">Origem: Campanha Gaúcha & Goiás</p>
-<div class="space-y-2 text-xs text-stone-300 mb-4 bg-stone-900 p-3 rounded-xl border border-stone-800">
-<p>• <strong>Uva Principal:</strong> Cabernet Sauvignon & Merlot</p>
-<p>• <strong>Safra:</strong> 2024</p>
-<p>• <strong>Teor Alcoólico:</strong> 11.5%</p>
-<p>• <strong>Qualidade:</strong> Frutado e Delicado</p>
-</div>
-<p class="text-stone-400 text-xs leading-relaxed">Notas florais e de morango fresco. Ideal para tardes quentes em Goiânia e pratos à base de frutos do mar.</p>
-</div>
-</div>
-</div>
-
-<!-- Vinho 4 -->
-<div class="bg-stone-950 rounded-2xl overflow-hidden border border-stone-800 hover:border-rose-500/50 transition duration-300 flex flex-col">
-<div class="h-64 overflow-hidden relative bg-stone-900 flex items-center justify-center p-4">
-<img src="https://images.unsplash.com/photo-1584916201218-f4242ceb480b?auto=format&fit=crop&w=600&q=80" alt="Vinho Tinto de Mesa Colonial" class="h-full object-contain hover:scale-105 transition duration-500">
-<span class="absolute top-3 right-3 bg-purple-950 text-purple-400 text-xs font-bold px-3 py-1 rounded-full border border-purple-800">Colonial Suave</span>
-</div>
-<div class="p-6 flex-1 flex flex-col justify-between">
-<div>
-<h3 class="text-xl font-bold font-serif text-white mb-1">Tradição do Boteco Tinto Suave</h3>
-<p class="text-xs text-purple-400 font-semibold mb-3">Origem: Vinícola Familiar Sulista</p>
-<div class="space-y-2 text-xs text-stone-300 mb-4 bg-stone-900 p-3 rounded-xl border border-stone-800">
-<p>• <strong>Uva Principal:</strong> Isabel & Bordô</p>
-<p>• <strong>Safra:</strong> Garrafa do Ano</p>
-<p>• <strong>Teor Alcoólico:</strong> 10.5%</p>
-<p>• <strong>Qualidade:</strong> Doçura equilibrada</p>
-</div>
-<p class="text-stone-400 text-xs leading-relaxed">A base perfeita para o clássico drink "Pé de Cabra" e para acompanhar petiscos tradicionais de boteco.</p>
-</div>
-</div>
-</div>
-
-</div>
-</div>
+  </div>
 </section>
 
-<!-- Guia de Taças Section -->
-<section id="taças" class="bg-stone-950 border-t border-b border-stone-800 py-16">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12">
-<h2 class="text-3xl font-bold font-serif text-white mb-3">Guia de Estilos de Taças e Copos</h2>
-<p class="text-stone-400">Entenda a importância de escolher o recipiente correto para cada perfil de drink ou vinho.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="bg-stone-900 p-6 rounded-2xl border border-stone-800 text-center">
-<div class="text-4xl mb-3">🍷</div>
-<h3 class="text-lg font-bold text-white mb-2 font-serif">Taça Balloon / Vinho</h3>
-<p class="text-xs text-stone-400">Bojo largo que permite a oxigenação correta dos vinhos e a concentração de aromas botânicos dos drinks.</p>
-</div>
-<div class="bg-stone-900 p-6 rounded-2xl border border-stone-800 text-center">
-<div class="text-4xl mb-3">🥃</div>
-<h3 class="text-lg font-bold text-white mb-2 font-serif">Copo Baixo (Old Fashioned)</h3>
-<p class="text-xs text-stone-400">Perfeito para caipirinhas, cachaças puras e drinks com grande quantidade de gelo e frutas maceradas.</p>
-</div>
-<div class="bg-stone-900 p-6 rounded-2xl border border-stone-800 text-center">
-<div class="text-4xl mb-3">🍸</div>
-<h3 class="text-lg font-bold text-white mb-2 font-serif">Taça Coupe</h3>
-<p class="text-xs text-stone-400">Indicada para drinks sours e coquetéis sem gelo, mantendo a temperatura fria por mais tempo.</p>
-</div>
-<div class="bg-stone-900 p-6 rounded-2xl border border-stone-800 text-center">
-<div class="text-4xl mb-3">🍹</div>
-<h3 class="text-lg font-bold text-white mb-2 font-serif">Caneca de Cobre / Barro</h3>
-<p class="text-xs text-stone-400">Excelente para manter bebidas geladas como Mules e preparações quentes como o quentão regional.</p>
-</div>
-</div>
-</div>
+
+<!-- VINHOS SUAVES (EM SEQUÊNCIA) -->
+<section id="vinhos-suaves" class="bg-stone-900/60 border-t border-stone-800 py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="inline-block py-1 px-3 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-semibold uppercase tracking-widest mb-3">Doçura Balanceada</span>
+      <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mb-4">Carta de Vinhos Suaves</h2>
+      <p class="text-stone-400 max-w-xl mx-auto">Ordenados do mais acessível ao mais refinado, perfeitos para petiscos tradicionais e o clássico drink "Pé de Cabra".</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Vinho Suave 1 -->
+      <div class="bg-stone-950 rounded-2xl overflow-hidden border border-stone-800 hover:border-purple-500/50 transition duration-300 flex flex-col">
+        <div class="p-6 bg-stone-900/40 border-b border-stone-800 flex justify-between items-center">
+          <span class="text-xs uppercase font-semibold bg-stone-800 text-stone-300 px-3 py-1 rounded-full">Linha Colonial</span>
+          <span class="text-xs font-bold text-purple-400 uppercase">Tinto Suave</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <h3 class="text-xl font-bold font-serif text-white mb-1">Tradição do Boteco Suave</h3>
+            <p class="text-xs text-stone-400 mb-3">📍 Origem: Seleção Familiar Integrada (GO / Sul)</p>
+            <div class="bg-stone-900 p-3 rounded-xl border border-stone-800 space-y-1.5 text-xs text-stone-300">
+              <p>• <strong>Uva:</strong> Isabel & Bordô</p>
+              <p>• <strong>Teor Alcoólico:</strong> 10.5%</p>
+              <p>• <strong>Taça:</strong> Copo Baixo / Taça Multiuso</p>
+            </div>
+          </div>
+          <p class="text-stone-400 text-xs leading-relaxed">Doçura agradável e aroma frutado intenso. Ótimo para receitas festivas e consumo descontraído.</p>
+        </div>
+      </div>
+
+      <!-- Vinho Suave 2 -->
+      <div class="bg-stone-950 rounded-2xl overflow-hidden border border-stone-800 hover:border-purple-500/50 transition duration-300 flex flex-col">
+        <div class="p-6 bg-stone-900/40 border-b border-stone-800 flex justify-between items-center">
+          <span class="text-xs uppercase font-semibold bg-stone-800 text-stone-300 px-3 py-1 rounded-full">Linha Clássica</span>
+          <span class="text-xs font-bold text-amber-300 uppercase">Branco Suave</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <h3 class="text-xl font-bold font-serif text-white mb-1">Doce Brisa do Araguaia</h3>
+            <p class="text-xs text-stone-400 mb-3">📍 Origem: Produtores Parceiros de Goiás</p>
+            <div class="bg-stone-900 p-3 rounded-xl border border-stone-800 space-y-1.5 text-xs text-stone-300">
+              <p>• <strong>Uva:</strong> Niágara Branca</p>
+              <p>• <strong>Teor Alcoólico:</strong> 10.0%</p>
+              <p>• <strong>Taça:</strong> Taça Universal para Branco</p>
+            </div>
+          </div>
+          <p class="text-stone-400 text-xs leading-relaxed">Extremamente aromático com notas de uva fresca e toque floral adocicado.</p>
+        </div>
+      </div>
+
+      <!-- Vinho Suave 3 (Mais requintado da categoria) -->
+      <div class="bg-stone-950 rounded-2xl overflow-hidden border border-stone-800 hover:border-purple-500/50 transition duration-300 flex flex-col">
+        <div class="p-6 bg-stone-900/40 border-b border-stone-800 flex justify-between items-center">
+          <span class="text-xs uppercase font-semibold bg-purple-950 text-purple-300 px-3 py-1 rounded-full border border-purple-800">Reserva Especial</span>
+          <span class="text-xs font-bold text-purple-400 uppercase">Tinto Suave Premium</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+          <div>
+            <h3 class="text-xl font-bold font-serif text-white mb-1">Rubi do Cerrado Suave</h3>
+            <p class="text-xs text-stone-400 mb-3">📍 Origem: Serra dos Pireneus - GO</p>
+            <div class="bg-stone-900 p-3 rounded-xl border border-stone-800 space-y-1.5 text-xs text-stone-300">
+              <p>• <strong>Uva:</strong> Bordô Selecionada</p>
+              <p>• <strong>Teor Alcoólico:</strong> 11.0%</p>
+              <p>• <strong>Taça:</strong> Taça Balloon / Tulipa</p>
+            </div>
+          </div>
+          <p class="text-stone-400 text-xs leading-relaxed">Versão superior com corpo mais denso, equilibrando o dulçor natural com a riqueza da uva bordô de altitude.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- Seção do Fundador -->
-<section id="fundador" class="py-16 bg-stone-900 border-t border-stone-800">
-<div class="max-w-4xl mx-auto px-4 text-center">
-<div class="inline-block p-4 bg-amber-500/10 rounded-full border border-amber-500/30 text-amber-400 text-4xl mb-4">
-👑
-</div>
-<h2 class="text-3xl font-bold font-serif text-white mb-2">Idealização & Autoria</h2>
-<p class="text-amber-500 font-semibold mb-6">Barman & Fundador do Cardápio: Franklin Ribeiro de Souza</p>
-<p class="text-stone-300 text-sm leading-relaxed max-w-2xl mx-auto mb-8">
-"Criar este guia nasceu da paixão em valorizar a riqueza do Cerrado goiano através da mixologia. Cada receita e seleção de vinho foi pensada para unir a tradição do nosso estado com o que há de mais moderno na coquetelaria mundial."
-</p>
-<div class="inline-block bg-stone-950 px-6 py-3 rounded-xl border border-stone-800 text-xs text-stone-400">
-Projeto Oficial — Goiânia Drinks & Coquetelaria Regional (2026)
-</div>
-</div>
+
+<!-- DRINKS REGIONAIS -->
+<section id="drinks" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+  <div class="text-center mb-16">
+    <span class="inline-block py-1 px-3 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-3">Coquetelaria Autoral</span>
+    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mb-4">Cardápio de Drinks do Cerrado</h2>
+    <p class="text-stone-400 max-w-xl mx-auto">Receitas exclusivas com ingredientes tipicamente goianos, elaboradas por Franklin Ribeiro de Souza.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Drink 1 -->
+    <div class="glass-panel rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col">
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold font-serif text-white">Gin Tônica do Cerrado</h3>
+            <span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Autoral</span>
+          </div>
+          <p class="text-stone-400 text-xs mb-4">Gin harmonizado com capim-santo e infusão leve de baru.</p>
+          <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800 text-xs text-stone-300 space-y-1">
+            <p>• <strong>Taça:</strong> Balloon</p>
+            <p>• <strong>Ingredientes:</strong> Gin (50ml), Tônica (150ml), Xarope de Capim-santo e Baru triturado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drink 2 -->
+    <div class="glass-panel rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col">
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold font-serif text-white">Caipira Goiana de Caju</h3>
+            <span class="text-xs uppercase bg-amber-950 text-amber-400 border border-amber-800 px-2 py-0.5 rounded">Tradicional</span>
+          </div>
+          <p class="text-stone-400 text-xs mb-4">Cachaça artesanal de alambique goiano com caju fresco.</p>
+          <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800 text-xs text-stone-300 space-y-1">
+            <p>• <strong>Taça/Copo:</strong> Copo Baixo (Old Fashioned)</p>
+            <p>• <strong>Ingredientes:</strong> Cachaça Artesanal (60ml), Caju Fresco, Açúcar Cristal e Gelo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drink 3 -->
+    <div class="glass-panel rounded-2xl overflow-hidden hover:border-amber-500/50 transition duration-300 flex flex-col">
+      <div class="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-xl font-bold font-serif text-white">Pequi Mule Autoral</h3>
+            <span class="text-xs uppercase bg-emerald-950 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded">Exclusivo</span>
+          </div>
+          <p class="text-stone-400 text-xs mb-4">Versão do Moscow Mule com toque de extrato suave de pequi.</p>
+          <div class="mb-4 bg-stone-950 p-3 rounded-xl border border-stone-800 text-xs text-stone-300 space-y-1">
+            <p>• <strong>Taça/Copo:</strong> Caneca de Cobre</p>
+            <p>• <strong>Ingredientes:</strong> Vodka Premium (50ml), Extrato de Pequi, Limão e Espuma de Gengibre.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GUIA DE TAÇAS -->
+<section id="tacas" class="bg-stone-900/40 border-t border-stone-800 py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold font-serif text-white mb-2">Guia de Estilos de Taças e Copos</h2>
+      <p class="text-stone-400 text-sm">A escolha correta do recipiente para realçar aromas e sabores.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="glass-panel p-6 rounded-2xl text-center">
+        <div class="text-4xl mb-3">🍷</div>
+        <h3 class="text-base font-bold text-white mb-1 font-serif">Taça Balloon / Bordeaux</h3>
+        <p class="text-xs text-stone-400">Bojo largo ideal para oxigenação de vinhos secos encorpados e botânicos de gin.</p>
+      </div>
+      <div class="glass-panel p-6 rounded-2xl text-center">
+        <div class="text-4xl mb-3">🥃</div>
+        <h3 class="text-base font-bold text-white mb-1 font-serif">Copo Baixo</h3>
+        <p class="text-xs text-stone-400">Perfeito para caipirinhas, cachaças puras e bebidas com gelo maciço.</p>
+      </div>
+      <div class="glass-panel p-6 rounded-2xl text-center">
+        <div class="text-4xl mb-3">🍸</div>
+        <h3 class="text-base font-bold text-white mb-1 font-serif">Taça Coupe / Tulipa</h3>
+        <p class="text-xs text-stone-400">Mantém a temperatura fria de coquetéis elegantes e espumantes.</p>
+      </div>
+      <div class="glass-panel p-6 rounded-2xl text-center">
+        <div class="text-4xl mb-3">🍹</div>
+        <h3 class="text-base font-bold text-white mb-1 font-serif">Caneca de Cobre / Barro</h3>
+        <p class="text-xs text-stone-400">Mantém a temperatura gelada por muito mais tempo em drinks estruturados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEÇÃO DE EVENTOS & WHATSAPP (BUROCRACIA ZERO) -->
+<section id="eventos" class="py-20 bg-gradient-to-b from-stone-900 to-[#09090b] border-t border-stone-800">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <div class="inline-block p-4 bg-emerald-500/10 rounded-full border border-emerald-500/30 text-emerald-400 text-4xl mb-4">
+      🎉
+    </div>
+    <h2 class="text-3xl sm:text-4xl font-bold font-serif text-white mb-3">Vai fazer um evento? Deixe a burocracia comigo!</h2>
+    <p class="text-amber-400 font-semibold mb-6">Barman Profissional & Organização Completa: Franklin Ribeiro de Souza</p>
+    <p class="text-stone-300 text-sm leading-relaxed max-w-2xl mx-auto mb-8">
+      Vai realizar um casamento, aniversário, festa corporativa ou evento particular em Goiânia ou região? Entre em contato diretamente comigo pelo WhatsApp. Eu resolvo toda a burocracia de insumos, estrutura de bar, carta de vinhos e equipe para que você só precise curtir o momento!
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://wa.me/5562999995308?text=Olá%20Franklin,%20quero%20fechar%20um%20evento%20com%20você%20e%20resolver%20todos%20os%20detalhes!" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-2xl shadow-xl flex items-center gap-3 transition duration-200">
+        <span class="text-xl">💬</span> Falar com Franklin no WhatsApp
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-stone-950 py-12 border-t border-stone-900 text-center text-xs text-stone-500">
-<div class="max-w-7xl mx-auto px-4 space-y-3">
-<p class="text-stone-400 font-serif text-sm">Goiânia Drinks & Coquetelaria Regional — Fundado por Franklin Ribeiro de Souza</p>
-<p>Desenvolvido sob medida para implantação em sistemas Ruby / Gate Ruby. Conteúdo voltado para fins gastronômicos e culturais.</p>
-<p class="text-stone-600">&copy; 2026 — Beba com moderação. Venda proibida para menores de 18 anos.</p>
-</div>
+<footer class="bg-[#09090b] py-12 border-t border-stone-900 text-center text-xs text-stone-500">
+  <div class="max-w-7xl mx-auto px-4 space-y-3">
+    <p class="text-stone-400 font-serif text-sm">Goiânia Drinks & Adega Goiana — Fundado e Idealizado por Franklin Ribeiro de Souza</p>
+    <p>Atendimento exclusivo para eventos e consultoria enogastronômica em Goiás.</p>
+    <p class="text-stone-600">&copy; 2026 — Beba com moderação. Venda proibida para menores de 18 anos.</p>
+  </div>
 </footer>
+
+<!-- Botão Flutuante WhatsApp -->
+<a href="https://wa.me/5562999995308?text=Olá%20Franklin,%20vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20eventos/vinhos!" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition transform hover:scale-110">
+  <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+  </svg>
+</a>
 
 </body>
 </html>
